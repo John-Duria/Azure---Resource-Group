@@ -16,53 +16,76 @@ This tutorial outlines Step-by-Step Guide to Creating a Resource Group in Azure.
 
 <h2>Task</h2>
 
-- Task 1. Creating a Resource Group and Deploying Windows 10 and Windows Server VMs.
-- Task 2. How to ensure connectivity between the client and Domain Controller.
-- Task 3. How to install Active Directory.
-- Task 4. How to create an Admin and Normal User Account in AD.
-- Task 5. How to join Client-1 to your domain (mydomain.com)
-- Task 6. How to setup Remote Desktop for non-administrative users on Client-1
-- Task 7. How to create a bunch of additional users and attempt to log into client-1 with one of the users
-1. Sign in to the Azure Portal:
+- Task 1. Create a Resource Group in Azure Portal
+- Task 2. Create a Storage Account within the Resource Group
+- Task 3. Upload a File from Local Desktop to Storage Account
+- Task 4. Edit the File within the Storage Account (Azure Portal)
+- Task 5. Download the Edited File and Observe Changes
 
-    Open your web browser and navigate to the Azure portal.
+
+Task 1: Create a Resource Group in Azure Portal
+
+    Open a web browser and navigate to the Azure Portal.
     Sign in with your Azure account credentials.
+    Click on "Resource groups" in the Azure Portal's left-hand menu or search menu above.
+    Click "Create" to create a new resource group.
 
-2. Navigate to Resource Groups:
+![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/60fac56e-a4a5-489d-a2db-c4661fe86123)
 
-    Once signed in, you'll see the Azure dashboard. Use the left-hand navigation pane to click on "Resource groups" under the "All services" section.
+    Enter the following details:
+        Subscription: Select your Azure subscription.
+        Resource group: Enter a unique name for your resource group.
+        Region: Choose the region where you want to deploy your resources.
+        Click "Review + create" and then "Create" to create the resource group.
 
-3. Create a New Resource Group:
+![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/06dbef69-a132-4e0d-afbe-d11cf0cccff5)
 
-    In the Resource groups blade, click on "+ Add" to create a new resource group.
+Task 2: Create a Storage Account within the Resource Group
 
-4. Fill in Resource Group Details:
+    In the Azure Portal,search for and select "Storage account" from the search menu above.
+    Click "Create" to start configuring the storage account.
 
-    In the "Basics" tab of the Create a resource group dialog:
-        Subscription: Choose the Azure subscription you want to use.
-        Resource group: Enter a unique name for your resource group. This name must be unique within the subscription and adhere to Azure naming rules (letters, numbers, hyphens, and periods are allowed).
-        Region: Select the Azure region where you want your resource group to be located.
+![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/30d8c607-38c0-4af7-a2be-88cdef53dde9)
 
-5. Review and Create:
+    Enter the required details:
+        Subscription: Select your Azure subscription.
+        Resource group: Choose the existing resource group.
+        Storage account name: Enter a unique name for your storage account.
+        Location: Choose the same region as your resource group.
+        Leave other settings as default or customize as needed.
+    Click "Review + create" and then "Create" to deploy the storage account.
 
-    After filling in the details, click on "Review + create" to review your resource group settings.
+![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/4029984e-b643-4596-a1bd-7d1f9ce0318f)
 
-6. Review the Details:
+Task 3: Upload a File from Local Desktop to Storage Account
 
-    Azure will validate the details you provided. Ensure all the information is correct.
+    Navigate to your newly created storage account in the Azure Portal.
+    Click on "Containers" in the Azure Portal's left-hand menu or search menu > "+ Container" to create a new container.
+    Enter a unique name for the container.
 
-7. Create the Resource Group:
+![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/a4b23377-3aa8-4188-8836-0b0638061740)
 
-    Click "Create" to create the resource group with the specified settings.
+    Open the container and click "Upload" to upload a file from your local desktop.
+    Select the file from your local computer and upload it to the container.
 
-8. Wait for Deployment:
+![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/10b519ce-554d-47ff-825c-fc8947b8ae5e)
 
-    Azure will now deploy your resource group. This process usually completes within a few seconds.
+Task 4: Edit the File within the Storage Account (Azure Portal)
 
-9. Resource Group Creation Confirmation:
+    Navigate to the uploaded file within the Azure Portal.
+    Click on the file to open it.
+    Use the built-in editor to make changes to the file directly within the Azure Portal.
+    Save the changes after editing the file.
 
-    Once deployment is complete, you will receive a notification that the resource group has been successfully created.
+![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/27bfa264-69c3-4779-8200-1121104b75b5)
 
-10. Accessing Your Resource Group:
-- Navigate back to the "Resource groups" section from the Azure portal's left-hand navigation pane.
-- You should now see your newly created resource group listed here.
+Task 5: Download the Edited File and Observe Changes
+
+    Navigate to the edited file within the Azure Portal.
+    Click on the file to view its details.
+    Click "Download" to download the file to your local desktop.
+    Open the downloaded file on your computer to observe the changes made in the Azure Portal.
+
+![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/d6ef9624-ae19-4e7e-b834-04717883205e)
+
+Finish.
