@@ -60,7 +60,8 @@ Task 2: Create a Storage Account within the Resource Group
 Task 3: Upload a File from Local Desktop to Storage Account
 
     Navigate to your newly created storage account in the Azure Portal.
-    Click on "Containers" in the Azure Portal's left-hand menu or search menu > "+ Container" to create a new container.
+    Click on "Containers" in the Azure Portal's left-hand menu or search menu > "+ Container" 
+    to create a new container.
     Enter a unique name for the container.
 
 ![image](https://github.com/John-Duria/Azure---Resource-Group/assets/168502429/a4b23377-3aa8-4188-8836-0b0638061740)
